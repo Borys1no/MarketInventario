@@ -4,7 +4,8 @@
 
 package com.mycompany.marketinventario;
 
-import vista.login;
+import vista.Log_in;
+
 
 /**
  *
@@ -13,7 +14,11 @@ import vista.login;
 public class MarketInventario {
 
     public static void main(String[] args) {
-        login lgn = new login();
+        Log_in lgn = new Log_in();
         lgn.setVisible(true);//hacemos visible la ventana
+        
+        //conexion 
+        Conexion objetoConexion = new Conexion();
+        objetoConexion.establecerConexion();
     }
 }
